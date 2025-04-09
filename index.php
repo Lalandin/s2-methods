@@ -1,9 +1,9 @@
 <?php
-//Henter klassen fra PrintMessage.php
-require 'classes/PrintMessage.php';
+//Henter klassen med metode
+require_once 'classes/PrintArgument.php';
 
-//Opretter nyt objekt af klassen
-$myMessage = new PrintMessage;
+//Opretter objekt af klassen
+$myMessage = new PrintArgument;
 
-//Bruger metoden i klassen
-$myMessage->print_message();
+//Kalder metoden til udskrift
+$myMessage->print_message("Dette er min anden method");
